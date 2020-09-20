@@ -69,7 +69,7 @@ public class ScoreList
 
         if(scores.size() > 1)
         {
-            scores.sort((v1, v2) -> v1.compareTo(v2));
+            scores.sort((v1, v2) -> v2.compareTo(v1));
             for(int score: scores)
             {
                 System.out.println(score);
@@ -114,7 +114,7 @@ public class ScoreList
 
                         // Decrement Length
                         this.length = length - 1;
-                        
+
                         // return node we removed from the list
                         return currNode;
                     } else
