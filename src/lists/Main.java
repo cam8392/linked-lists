@@ -1,32 +1,19 @@
-//CS 253 PROGRAM ASSIGNMENT #1, part 3
-//Single Linked List Main Method
-//Sylwia Furdyna
-//September 19, 2020
 
-import java.util.Scanner;
+package lists;
 
 public class Main 
 {
     public static void main(String args[])   
     {
-        Scanner in = new Scanner(System.in)'
-        System.out.println ("Enter the input string: ");
-        String input = in.nextLine();
-        ScoreList head = new ScoreList();
-        String scores[] = inpute.split("");
-        for (String s: scores)
-        {
-            int start = s.indexOf('(');
-            int end = s.indexOf('(');
-            s = s.subsring(star+1, end);
-        }
-        String subScores[] = s.Split(",");
-    if(subScores[0].equsals("A"))
-    {
-        Node score = new Node(subScores[1].trim(),Integer.parseInt(subScores[2].trimp()),null,null);
-    }
+        // Create a new linked list
+        ScoreList highScores = new ScoreList();
 
-System.out.println();
-head.display();
+        highScores.appendNode(32);
+        highScores.appendNode(54);
+        highScores.appendNode(88);
+        highScores.appendNode(200);
+        highScores.appendNode(78800);
+        highScores.appendNode(87);
+        highScores.print();
     }
 }
